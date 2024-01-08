@@ -24,7 +24,6 @@ var createNewTaskElement = function (taskString) {
   var editInput = document.createElement("input"); //text
   //button.edit
   var editButton = document.createElement("button"); //edit button
-
   //button.delete
   var deleteButton = document.createElement("button"); //delete button
   var deleteButtonImg = document.createElement("img"); //delete button image
@@ -37,6 +36,7 @@ var createNewTaskElement = function (taskString) {
   //Each elements, needs appending
   checkBox.type = "checkbox";
   checkBox.className = "checkbox";
+
   editInput.type = "text";
   editInput.className = "task task-input";
 
@@ -71,7 +71,6 @@ var addTask = function () {
 };
 
 //Edit an existing task.
-
 var editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
